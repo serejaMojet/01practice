@@ -38,14 +38,30 @@ menuBtn.addEventListener("click", () => {
 });
 
 // Обработчик клика по документу
-document.addEventListener("click", (burgEvent) => {
-  const target = burgEvent.target;
+document.addEventListener("click", (eventBurger) => {
+  const target = eventBurger.target;
 
   // Проверка, является ли цель клика частью меню или кнопки меню
   const isMenuClicked = menu.contains(target) || menuBtn.contains(target);
 
   // Если клик был совершен вне меню, закрыть его
   if (!isMenuClicked && menu.classList.contains("menu--active")) {
+    menu.classList.remove("menu--active");
+  }
+});
+
+// Обработчик скролла страницы
+window.addEventListener("scroll", () => {
+  // Закрывать меню при скролле
+  if (menu.classList.contains("menu--active")) {
+    menu.classList.remove("menu--active");
+  }
+});
+
+// Обработчик изменения размеров окна
+window.addEventListener("resize", () => {
+  // Закрывать меню при изменении размеров окна
+  if (menu.classList.contains("menu--active")) {
     menu.classList.remove("menu--active");
   }
 });
