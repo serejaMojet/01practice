@@ -12,15 +12,20 @@
     <header class="header">
       <div class="container">
         <nav class="nav">
+          <button class="menu_btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
           <ul class="menu">
             <li class="menu__list">
-              <a href="" class="menu__link">SHOP</a>
+              <a href="#shop" class="menu__link">SHOP</a>
             </li>
             <li class="menu__list">
-              <a href="" class="menu__link">GAMES</a>
+              <a href="#games" class="menu__link">GAMES</a>
             </li>
             <li class="menu__list">
-              <a href="" class="menu__link">METAVERSE</a>
+              <a href="#metaverse" class="menu__link">METAVERSE</a>
             </li>
           </ul>
           <a href="" class="logo">
@@ -48,6 +53,7 @@
           <p class="buy__text">Meta Quest 2 is for ages 13+</p>
         </div>
       </section>
+
       <section class="features">
         <div class="container">
           <div class="features__titles">
@@ -60,22 +66,22 @@
                 class="tabs__btn_item tabs__btn_item--active"
                 data-button="content-1"
               >
-                01 Graphics
+                1. Graphics
               </button>
               <button class="tabs__btn_item" data-button="content-2">
-                02 Controls
+                2. Controls
               </button>
               <button class="tabs__btn_item" data-button="content-3">
-                03 Processor
+                3. Processor
               </button>
               <button class="tabs__btn_item" data-button="content-4">
-                04 Set up your play area
+                4. Set up your play area
               </button>
               <button class="tabs__btn_item" data-button="content-5">
-                05 Gardian activity
+                5. Gardian activity
               </button>
               <button class="tabs__btn_item" data-button="content-6">
-                06 Headset casting
+                6. Headset casting
               </button>
             </div>
             <div class="tabs__content">
@@ -193,7 +199,8 @@
           </div>
         </div>
       </section>
-      <section class="game">
+
+      <section class="game" id="games">
         <div class="container">
           <h2 class="section_title game__title">GAMES</h2>
           <div class="game__inner">
@@ -236,6 +243,7 @@
           </div>
         </div>
       </section>
+
       <div class="buy">
         <div class="buy__bg">OCULUS</div>
         <img src="images/oculus.png" alt="" class="buy__img" />
@@ -245,6 +253,7 @@
         </button>
         <p class="buy__text">Meta Quest 2 is for ages 13+</p>
       </div>
+
       <section class="equipment">
         <div class="container">
           <h2 class="equipment__title section_title">IN THE BOX</h2>
@@ -273,14 +282,23 @@
           </div>
         </div>
       </section>
-      <div class="promo">
+
+      <div class="promo" id="metaverse">
         <div class="container">
           <div class="promo__inner">
+            <iframe
+              src="https://www.youtube.com/embed/Exu7r2vZpcw?si=yvil1_INwNIdBVOn"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
             <button class="promo__btn">GO</button>
           </div>
         </div>
       </div>
-      <section class="accessories">
+
+      <section class="accessories" id="shop">
         <div class="container">
           <h2 class="accessories__title section_title">ACCESSORIES</h2>
           <p class="accessories__text">Personalize every experience</p>
@@ -327,6 +345,7 @@
           </div>
         </div>
       </section>
+
       <section class="contacts">
         <div class="container">
           <h2 class="contacts__title">Get news and updates</h2>
@@ -351,47 +370,47 @@
           </div>
         </div>
       </section>
-      <footer class="footer">
-        <div class="container">
-          <nav class="footer__nav">
-            <ul class="menu">
-              <li class="menu__list">
-                <a href="" class="menu__link">SHOP</a>
-              </li>
-              <li class="menu__list">
-                <a href="" class="menu__link">GAMES</a>
-              </li>
-              <li class="menu__list">
-                <a href="" class="menu__link">METAVERSE</a>
-              </li>
-              <li class="menu__list">
-                <a href="" class="menu__link">CONTACT US</a>
-              </li>
-            </ul>
-            <a href="" class="logo">
-              <img src="images/logo.svg" alt="" />
-            </a>
-            <ul href="" class="social">
-              <li class="social__item">
-                <a href="#" class="social__link">
-                  <img src="images/youtube.svg" alt="" />
-                </a>
-              </li>
-              <li class="social__item">
-                <a href="#" class="social__link">
-                  <img src="images/facebook.svg" alt="" />
-                </a>
-              </li>
-              <li class="social__item">
-                <a href="#" class="social__link">
-                  <img src="images/instagram.svg" alt="" />
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </footer>
     </main>
+    <footer class="footer">
+      <div class="container">
+        <nav class="footer__nav">
+          <ul class="menu">
+            <li class="menu__list">
+              <a href="" class="menu__link">SHOP</a>
+            </li>
+            <li class="menu__list">
+              <a href="" class="menu__link">GAMES</a>
+            </li>
+            <li class="menu__list">
+              <a href="" class="menu__link">METAVERSE</a>
+            </li>
+            <li class="menu__list">
+              <a href="" class="menu__link">CONTACT US</a>
+            </li>
+          </ul>
+          <a href="" class="logo">
+            <img src="images/logo.svg" alt="" />
+          </a>
+          <ul href="" class="social">
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <img src="images/youtube.svg" alt="" />
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <img src="images/facebook.svg" alt="" />
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <img src="images/instagram.svg" alt="" />
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
     <script src="js/main.js"></script>
   </body>
 </html>
